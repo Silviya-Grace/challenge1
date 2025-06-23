@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            position: relative;
+            background-color: rgb(245, 242, 239);
+        }
+        .first{
+            position: absolute;
+            background-color:  hsl(0, 45%, 94%);
+            height:360px;
+            width:350px;
+            text-align: center;
+            font-size: large;
+            top:30px;
+            left:100px;
+            border-radius: 10px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+        .first:hover{
+            transform: translateY(-10px);
+        }
+        .first h11{
+            font-style: 'DM sans Medium';
+        }
+        .first img{
+            height: 100px;
+            width: 200px;
+        }
+        .second{
+            position:absolute;
+            background-color:hsl(256, 70%, 71%);
+            top:30px;
+            height:250px;
+            width:650px;
+            border-radius: 10px;
+            left:480px;
+            text-align: center;
+            font-size: larger;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+        .second img{
+            width:120px;
+            height:30px;
+        }
+         .second:hover{
+            transform: translateY(-10px);
+        }
+        .third{
+            position: absolute;
+            height:550px;
+            width:250px;
+            left:1160px;
+            text-align: center;
+            background-color:hsl(256, 21%, 79%);
+            border-radius: 10px;
+            overflow: hidden;
+            top: 30px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+        .third img{
+            height:250px;
+            width:200px;
+           object-fit: cover;
+}
+
+        .third:hover{
+           transform: translateY(-10px);  
+        }
+        .fourth{
+            position: absolute;
+            background-color:  hsl(38, 76%, 64%);
+            height:430px;
+            width:350px;
+            text-align:center;
+            font-size: large;
+            top:420px;
+            left:100px;
+            border-radius: 10px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+        .fourth img{
+            height:250px;
+            width:300px;
+        }
+        .fourth:hover{
+            transform: translateY(-10px);  
+        }
+        .fifth{
+            position: absolute;
+            height:280px;
+            width:300px;
+            background-color: rgb(255, 255, 255);
+            font-size:large;
+            top:300px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            
+             left:480px;
+             border-radius: 10px;
+              overflow: hidden;
+        }
+        .fifth img{
+            height:80px;
+            width:350px;
+            object-fit: cover;
+        }
+        .fifth:hover{
+              transform: translateY(-10px); 
+        }
+        .fifth h1{
+            margin:0px;
+        }
+        .sixth{
+             position: absolute;
+            height:260px;
+            width:300px;
+            background-color: rgb(255, 255, 255);
+            font-size:large;
+            top:600px;
+             left:480px;
+             border-radius: 10px;
+              overflow: hidden;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+        .sixth img{
+            height:80px;
+        }
+    .sixth:hover{
+         transform: translateY(-10px);
+    }
+    .seventh{
+         position: absolute;
+            height:280px;
+            width:280px;
+            background-color:  hsl(38, 76%, 64%);
+            font-size:larger;
+            top:300px;
+            text-align: left;
+            overflow:hidden;
+             left:830px;
+             border-radius: 10px;
+             font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+    }
+    .seventh img{
+        height:200px;
+        width:280px;
+        object-fit:cover;
+    }
+    .seventh:hover{
+         transform: translateY(-10px);
+    }
+    .eigth{
+        position: absolute;
+            height:260px;
+            width:580px;
+            background-color:  hsl(38, 76%, 64%);
+            font-size:larger;
+            top:600px;
+            text-align: left;
+             left:830px;
+             border-radius: 10px;
+               display: flex;
+              align-items: center; /* aligns vertically center */
+              gap: 10px; /* space between image and h1 */
+              font-family: 'DM Sans', sans-serif;
+              font-weight: 500;
+    }
+    .eigth img{
+        height:250px;
+        width:300px;
+        
+        
+
+    }
+    .eigth:hover{
+        transform: translateY(-10px);
+    }
+    @media screen and (max-width: 600px) {
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth,
+    .seventh,
+    .eigth {
+        position: static; /* Removes absolute positioning */
+        width: 90%;        /* Makes it responsive */
+        margin: 20px auto; /* Adds space and centers it */
+        height: auto;      /* Let height grow based on content */
+        display: block;
+        text-align: center;
+    }
+
+    .eigth {
+        flex-direction: column; /* Will stack image and text if flex is there */
+    }
+
+    .eigth img {
+        width: 100%;
+        height: auto;
+    }
+
+    .fifth img,
+    .fourth img,
+    .third img,
+    .second img,
+    .first img,
+    .sixth img,
+    .seventh img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+  
+
+    </style>
+</head>
+<body>
+    <div class="first">
+        <h1>Create and <br>schedule <br>content</h1>
+        <h1 style="color:blue"> quicker :</h1>
+        <img src="illustration-create-post.webp" alt="create post">
+
+    </div>
+    <div class="second">
+        <h1>Social media <i style="color:rgb(234, 158, 17)">10X</i><br>Faster with AI </h1>
+        <img src="illustration-five-stars.webp" alt="star">
+       <p style="font-size: medium;">Over 4000 5-star reviews</p>
+    </div>
+    <div class="third">
+        <h1>Schedule to <br>Social media.</h1>
+        <img src="illustration-schedule-posts.webp" alt="Scheduling">
+        <p>Optimize post timings <br>to publish content at <br>the perfect time for <br>your audience</p>
+    </div>
+    <div class="fourth">
+       <h1>Write your <br>content <br>using AI</h1>
+       <img src="illustration-ai-content.webp" alt="Fourth">
+    </div>
+    <div class="fifth">
+        <img src="illustration-multiple-platforms.webp" alt="Fifth">
+        <h1>Manage <br>multiple <br>accounts and <br>platforms </h1>
+    </div>
+    <div class="sixth">
+        <h1>>56%</h1>
+        <p>faster audience growth</p>
+        <img src="illustration-audience-growth.webp" alt="sixth">
+
+    </div>
+    <div class="seventh">
+        <h2>Maintain a <br>consistent <br>posting <br>schedule</h2>
+        <center>
+        <img src="illustration-consistent-schedule.webp" alt=""></center>
+    </div>
+    <div class="eigth">
+        
+        <img src="illustration-grow-followers.webp" alt="eigth">
+         <h1 style="text-align:right;" >Grow followers <br> with non-stop <br>content</h1>
+       
+    </div>
+</body>
+</html>
